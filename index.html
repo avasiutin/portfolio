@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Your Portfolio</title>
+</head>
+<body>
+
+    <header>
+        <h1>Andrej Vasiutin</h1>
+        <p>Design Developer</p>
+    </header>
+
+    <section id="about">
+        <h2>About</h2>
+        <div class="about">
+            <p>I am an experienced product developer, who has been working on various design and manufacturing projects for over 6 years. I am an ambitious person who is driven to achieve the set targets and implement company policy. I have the ability to work independently and as a part of a team.
+
+            During my various positions, I gained valuable experience in developing ideas, problem solving and achieving targets in the most reasonable time in order to meet client requirements.
+            </p>
+        </div>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project" onclick="showProjectDetails(1)">
+            <h3>Project 1</h3>
+            <p>Description of Project 1.</p>
+        </div>
+        <div class="project" onclick="showProjectDetails(2)">
+            <h3>Project 2</h3>
+            <p>Description of Project 2.</p>
+        </div>
+    </section>
+
+    <section id="project-details" class="hidden">
+        <button onclick="hideProjectDetails()">Close</button>
+        <h2 id="project-title"></h2>
+        <p id="project-description"></p>
+    </section>
+
+    <footer>
+        <p>Contact: vasiutinandrej@gmail.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
